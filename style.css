@@ -1,0 +1,124 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  padding-top: 100px;
+  background-color:rgb(189, 206, 243)
+}
+
+input {
+  width: 40%;
+  font-size: 1.5rem;
+  background-color: rgb(236, 236, 236);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn-add {
+  margin: 0px 10px;
+  padding: 10px;
+  padding-top: 13px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: rgb(86, 121, 236);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-add:active {
+  background-color: rgb(49, 81, 170);
+}
+
+.btn {
+  padding: 5px 30px;
+  margin: 1rem 0 0 1rem;
+  background-color: rgb(65, 202, 60);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color:rgb(26, 156, 26);
+  
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.task-done {
+  text-decoration: line-through;
+  background-color: rgb(206, 229, 205);
+}
+
+.task-wrap {
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.ul-done {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+li {
+  display: flex;
+  margin-top: 5px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: rgb(236, 236, 236);
+  text-align: left;
+  padding-left: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hide {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: height 0.5s linear;
+}
+
+.show {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition:
+    opacity 0.5s linear,
+    height 0.5s linear;
+}
+
+.img {
+  width: 20px;
+  height: auto;
+  margin-right: 20px;
+}
+
+span {
+  margin-left: auto;
+}
+
+.del-li {
+  transform: translateX(-200%);
+  transition: transform 0.5s ease;
+}
